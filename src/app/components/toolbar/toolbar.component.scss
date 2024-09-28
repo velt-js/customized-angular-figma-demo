@@ -1,0 +1,23 @@
+.toolbar {
+	height: 52px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #2C2C2C;
+
+	button {
+		min-width: 52px;
+		height: 100%;
+		padding: 0 0.5rem;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		border-right: 1px solid #404040;
+	}
+
+	.comment-button {
+		width: 52px;
+		padding: 0;
+	}
+}

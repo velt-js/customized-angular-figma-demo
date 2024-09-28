@@ -1,1 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background-color: #141414;
+}
+
+velt-comment-tool {
+	display: block;
+	border-radius: 0 !important;
+}
+
+.comment-tool-active {
+	border: none !important;
+	border-radius: 0 !important;
+	width: 52px !important;
+	height: 52px !important;
+
+}
+
+.velt-tool--action-btn {
+	border: none !important;
+	border-radius: 0 !important;
+	width: 52px !important;
+	height: 52px !important;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.04) !important;
+	}
+}
+
+.velt-tool--action-btn.active,
+.handle {
+	background-color: #3F8AE2 !important;
+}
+
+.line {
+	border-color: #3B95FF !important;
+}
+
+.velt-comment-pin--marker {
+	background-color: #404040 !important;
+	border-color: #242424 !important;
+}
+
+.velt-comment-pin-open {
+	div{
+		.velt-comment-pin--marker {
+			border-color: #3B95FF !important;
+		}
+
+	}
+}
+
+.velt-sidebar-container {
+	padding: 0 !important;
+	border-radius: 0 !important;
+	background-color: #2C2C2C !important;
+
+	.velt-comment-sidebar-panel,
+	.velt-sidebar-header {
+		background-color: #2C2C2C !important;
+	}
+}
+
+.velt-sidebar--no-comments-block::after {
+	content: 'Add a comment'
+}
+
+app-comment-dialog-header,
+.velt-header,
+.velt-comment-dialog--line-div {
+	display: none !important;
+}
+
+.velt-comment-dialog {
+	margin-left: 8px;
+	background-color: #202020 !important;
+}
+
+.velt-composer--reply-div {
+	background-color: #202020 !important;
+}
+
+.velt-toggle-reply {
+	margin-left: 2.6rem;
+	opacity: 0.5;
+
+	svg {
+		display: none !important;
+	}
+}
+
+.velt-thread-card--author {
+	.s-overflow-hidden {
+		display: flex;
+		gap: 0.5rem;
+	}
+}
+
+.velt-thread-card--message {
+	margin-top: 0.25rem !important;
+}
+
+app-comment-dialog-thread-card-avatar {
+	margin-top: 4px;
+}

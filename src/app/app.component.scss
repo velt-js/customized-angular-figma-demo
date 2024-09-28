@@ -1,0 +1,10 @@
+.main-content {
+	display: flex;
+	height: calc(100dvh - 88px);
+	width: 100dvw;
+
+	#canvas {
+		width: 100%;
+		height: 100%;
+	}
+}
