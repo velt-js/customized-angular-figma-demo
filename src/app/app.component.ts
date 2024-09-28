@@ -47,8 +47,6 @@ export class AppComponent {
 
 			commentElement?.onCommentModeChange().subscribe((mode) => {
 				this.showSidebar = mode;
-				console.log(mode);
-
 			});
 
 			commentElement.onCommentSelectionChange().subscribe((comment) => {
