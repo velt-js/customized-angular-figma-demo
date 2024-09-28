@@ -44,6 +44,7 @@ export class AppComponent {
 
 			const commentElement = this.client.getCommentElement();
 			commentElement.disableCommentPinHighlighter();
+			commentElement.setPinCursorImage('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIGQ9Ik0xNiAyOS41SDNDMi43MjM4NiAyOS41IDIuNSAyOS4yNzYxIDIuNSAyOVYxNkMyLjUgOC41NDQxNiA4LjU0NDE2IDIuNSAxNiAyLjVDMjMuNDU1OCAyLjUgMjkuNSA4LjU0NDE2IDI5LjUgMTZDMjkuNSAyMy40NTU4IDIzLjQ1NTggMjkuNSAxNiAyOS41WiIgZmlsbD0iIzNCOTVGRiIgc3Ryb2tlPSJ3aGl0ZSIvPgo8L3N2Zz4=');
 
 			commentElement?.onCommentModeChange().subscribe((mode) => {
 				this.showSidebar = mode;
