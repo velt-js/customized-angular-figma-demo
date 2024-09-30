@@ -8,12 +8,6 @@
 		height: 100%;
 		overflow: hidden;
 
-		img {
-			user-select: none;
-			pointer-events: none;;
-			width: 150%;
-			height: 150%;
-			object-fit: contain;
-		}
+		background: url('/assets/canvas-cyberpunk.png') no-repeat top left;
 	}
 }
