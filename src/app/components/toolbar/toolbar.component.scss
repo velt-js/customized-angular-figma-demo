@@ -20,4 +20,12 @@
 		width: 52px;
 		padding: 0;
 	}
+
+	velt-sidebar-button {
+		right: 0;
+		position: absolute;
+		color: #fff !important;
+
+		--velt-purple: #3C3C3C;
+	}
 }
