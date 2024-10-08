@@ -87,6 +87,12 @@ app-comment-dialog-header,
 
 .velt-composer--reply-div {
 	background-color: #202020 !important;
+
+	svg {
+		path{
+			color: var(--velt-grey-btn-color) !important;
+		}
+	}
 }
 
 .velt-toggle-reply {
@@ -111,4 +117,9 @@ app-comment-dialog-header,
 
 app-comment-dialog-thread-card-avatar {
 	margin-top: 4px;
+}
+
+.velt-recording-preview--icon-button{
+	background-color: light-dark(#1f1f1f, #ffffff) !important;
+	border: none !important;
 }

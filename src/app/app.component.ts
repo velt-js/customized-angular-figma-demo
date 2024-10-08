@@ -21,7 +21,7 @@ export class AppComponent {
 
 	client!: Velt;
 	showSidebar: boolean = false;
-
+	showHeader: boolean = false;
 	user: User = {
 		userId: '123',
 		email: 'test@test.com',
@@ -30,7 +30,13 @@ export class AppComponent {
 	};
 
 	constructor() {
+		this.checkHeaderQueryParam();
 		this.initializeVelt();
+	}
+
+	private checkHeaderQueryParam() {
+		const urlParams = new URLSearchParams(window.location.search);
+		this.showHeader = urlParams.get('showHeader') === 'true';
 	}
 
 	private async initializeVelt() {
