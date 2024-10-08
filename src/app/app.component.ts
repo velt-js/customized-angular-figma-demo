@@ -7,6 +7,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { NgIf } from '@angular/common';
+import { GUEST_USERS } from '../constant';
 
 @Component({
 	selector: 'app-root',
@@ -59,6 +60,9 @@ export class AppComponent {
 			commentElement.onCommentSelectionChange().subscribe((comment) => {
 				this.showSidebar = comment?.selected ?? true;
 			});
+
+			let contactElement = this.client.getContactElement();
+			contactElement.updateContactList(GUEST_USERS);
 		}
 
 	}
